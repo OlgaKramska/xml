@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by Olga Kramska on 12-Apr-16.
@@ -48,5 +49,10 @@ public class ParserTest {
     public void testStAXParser() throws XMLStreamException {
         List<Speech> speeches = StAXPlayStreamReader.getSpeechesFromXML(in);
         assertEquals(expectedSpeakerMap, PlayAnalyser.analyse(speeches));
+    }
+
+    @Test
+    public void testTrue(){
+        assertTrue(false);
     }
 }
