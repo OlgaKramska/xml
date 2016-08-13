@@ -50,9 +50,4 @@ public class ParserTest {
         List<Speech> speeches = StAXPlayStreamReader.getSpeechesFromXML(in);
         assertEquals(expectedSpeakerMap, PlayAnalyser.analyse(speeches));
     }
-
-    @Test
-    public void testTrue(){
-        assertTrue(false);
-    }
 }
